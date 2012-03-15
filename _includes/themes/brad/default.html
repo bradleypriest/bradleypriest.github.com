@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ ASSET_PATH }}/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 class='megaheader'>
+          <a class='silent-link' href="/">{{site.title}}</a>
+        </h1>
+<!--         <h2><small>{{site.tagline}}</small></h2>
+ -->      </header>
+      <div class="content">
+        <section class='row'>
+          <div class='span8'>
+            {{ content }}
+          </div>
+          <div class='span4'>
+            <aside class='sidebar'>
+              <img class='avatar' src='http://www.gravatar.com/avatar/34b3e93704a811f2befad5a894e28072.png?s=240'/>
+              <h3>Contact</h3>
+              <ul class='unstyled contact' >
+                {% if site.author.email %}
+                <li class='icon-envelope icon-large'>
+                  <a href='mailto:{{site.author.email}}'>{{site.author.email}}</a>
+                </li>
+                {% endif %}
+                {% if site.author.twitter %}
+                <li class='icon-twitter-sign icon-large'>
+                  <a href='http://twitter.com/{{site.author.twitter}}'>@{{site.author.twitter}}</a>
+                </li>
+                {% endif %}
+                {% if site.author.github %}
+                <li class='icon-github-sign icon-large'>
+                  <a href='http://github.com/{{site.author.github}}'>@{{site.author.github}}</a>
+                </li>
+                {% endif %}
+              </ul>
+              <h3>Pages</h3>
+              <ul>
+                {% assign pages_list = site.pages %}
+                {% include JB/pages_list %}
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+      </div>
+
+      <footer>
+        <p>&copy; {{ site.author.name }} 2012
+          based on <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    {% include JB/analytics %}
+  </body>
+</html>
