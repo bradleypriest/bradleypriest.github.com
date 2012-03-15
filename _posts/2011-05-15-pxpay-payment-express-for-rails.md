@@ -6,6 +6,7 @@ category:
 tagline:
 tags: ['rails', 'pxpay']
 ---
+{% include JB/setup %}
 
 Building websites in NZ invariably leads to integrating our most popular Payment Solution, Payment Express (DPS) over and over again.
 

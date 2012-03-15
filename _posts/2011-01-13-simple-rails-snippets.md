@@ -6,6 +6,7 @@ tagline:
 category:
 tags: ['rails']
 ---
+{% include JB/setup %}
 
 <p>There has been a bit of development around content micro-management in the Rails ecosystem lately.</p>
 

@@ -15,22 +15,27 @@ When using ActiveRecord as well as passing a String/Integer or Array into a quer
 I find this particularly helpful when searching by date.
 
 For example instead of:
-{{ highlight ruby }}
-    Widget.where('created_at > ? AND created_at < ?', 2.hours.ago, Time.now)
-      #=> SELECT "widgets".* FROM "widgets" WHERE (created_at > '2011-06-18 03:38:58.493361' AND created_at < '2011-06-18 05:38:58.493442')
-{{ highlight }}
+
+{% highlight ruby %}
+  Widget.where('created_at > ? AND created_at < ?', 2.hours.ago, Time.now)
+    #=> SELECT "widgets".* FROM "widgets" WHERE (created_at > '2011-06-18 03:38:58.493361' AND created_at < '2011-06-18 05:38:58.493442')
+{% endhighlight %}
+
 You can use a range, e.g.
-{{ highlight ruby }}
-Widget.where(:created_at => 2.hours.ago..Time.now)
-  #=> SELECT "widgets".* FROM "widgets" WHERE ("widgets"."created_at" BETWEEN '2011-06-18 03:36:53.551349' AND '2011-06-18 05:36:53.551489')
-{{ highlight ruby }}
+
+{% highlight ruby %}
+  Widget.where(:created_at => 2.hours.ago..Time.now)
+    #=> SELECT "widgets".* FROM "widgets" WHERE ("widgets"."created_at" BETWEEN '2011-06-18 03:36:53.551349' AND '2011-06-18 05:36:53.551489')
+{% endhighlight %}
 
 Notice how using an inclusive range produces a SQL BETWEEN query.
 
 Using an exclusive range gives a different query.
-{{ highlight ruby }}
-    Widget.where(:created_at => 2.hours.ago...Time.now)
-      #=> SELECT "widgets".* FROM "widgets" WHERE ("widgets"."created_at" >= '2011-06-11 05:25:12.738961' AND "widgets"."created_at" < '2011-06-18 05:25:12.739321')
+
+{% highlight ruby %}
+  Widget.where(:created_at => 2.hours.ago...Time.now)
+    #=> SELECT "widgets".* FROM "widgets" WHERE ("widgets"."created_at" >= '2011-06-11 05:25:12.738961' AND "widgets"."created_at" < '2011-06-18 05:25:12.739321')
+{% endhighlight %}
 
 Use carefully.
 
