@@ -1,0 +1,49 @@
+---
+layout: home
+title: Home
+tagline:
+---
+{% include JB/setup %}
+{% if paginator.previous_page %}
+  {% if paginator.previous_page == 1 %}
+    {% assign previous_page = '' %}
+  {% else %}
+    {% assign previous_page = 'page'+paginator.previous_page %}
+  {% endif %}
+{% else %}
+  {% assign previous_page = '' %}
+{% endif %}
+
+
+
+{% for post in paginator.posts %}
+  <article>
+      <h2>
+        <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+        <small>{{ post.date | date_to_string }}</small>
+      </h2>
+    <div class='post-content'>
+      {{ post.content }}
+    </div>
+    <a class='inline-comments' href="{{ BASE_PATH }}{{ post.url }}#disqus_thread" {% if post.guid %}data-disqus-identifier='{{post.guid}}'{%endif%}>Comments</a>
+    <div class='inline-tags'>
+      <span>Tags:</span>
+      <ul class='unstyled no-tag-count'>
+        {% assign tags_list = post.tags %}
+        {% include JB/tags_list %}
+      </ul>
+    </div>
+  </article>
+{% endfor %}
+
+<ul class='pager'>
+  <li class='previous{% unless paginator.previous_page %} disabled{% endunless %}'>
+    <a href='{{ previous_page }}'>&larr; Previous Page</a>
+  </li>
+
+  <li><a href='{{site.JB.archive_path}}' class='archives'>Archives</a></li>
+
+  <li class='next{% unless paginator.next_page %} disabled{% endunless %}'>
+    <a href='/page{{paginator.next_page}}'>Next Page &rarr;</a>
+  </li>
+</ul>

@@ -42,28 +42,39 @@
           <div class='span4'>
             <aside class='sidebar'>
               <img class='avatar' src='http://www.gravatar.com/avatar/34b3e93704a811f2befad5a894e28072.png?s=240'/>
+              <h3>About</h3>
+
               <h3>Contact</h3>
               <ul class='unstyled contact' >
+
                 {% if site.author.email %}
-                <li class='icon-envelope icon-large'>
-                  <a href='mailto:{{site.author.email}}'>{{site.author.email}}</a>
-                </li>
+                  <li class='icon-envelope icon-large'>
+                    <a href='mailto:{{site.author.email}}'>{{site.author.email}}</a>
+                  </li>
                 {% endif %}
+
                 {% if site.author.twitter %}
-                <li class='icon-twitter-sign icon-large'>
-                  <a href='http://twitter.com/{{site.author.twitter}}'>@{{site.author.twitter}}</a>
-                </li>
+                  <li class='icon-twitter-sign icon-large'>
+                    <a href='http://twitter.com/{{site.author.twitter}}'>@{{site.author.twitter}}</a>
+                  </li>
                 {% endif %}
+
                 {% if site.author.github %}
-                <li class='icon-github-sign icon-large'>
-                  <a href='http://github.com/{{site.author.github}}'>@{{site.author.github}}</a>
-                </li>
+                  <li class='icon-github-sign icon-large'>
+                    <a href='http://github.com/{{site.author.github}}'>@{{site.author.github}}</a>
+                  </li>
                 {% endif %}
+
               </ul>
-              <h3>Pages</h3>
-              <ul>
-                {% assign pages_list = site.pages %}
+              <h3>Recent Posts</h3>
+              <ul class='unstyled'>
+                {% assign pages_list = site.posts %}
                 {% include JB/pages_list %}
+              </ul>
+              <h3>Tags</h3>
+              <ul class='unstyled no-tag-count'>
+                {% assign tags_list = site.tags %}
+                {% include JB/tags_list %}
               </ul>
             </aside>
           </div>

@@ -107,3 +107,22 @@ ul.contact{
 .tag_box li{
   float:left;
 }
+.pager{
+  margin-top:20px;
+}
+.pager .archives{
+  margin-left:-30px;
+}
+.no-tag-count li a span{
+  display: none;
+}
+.inline-tags{
+  min-height:1.4em;
+}
+.inline-comments{
+  float:right;
+}
+.inline-tags li, .inline-tags span{
+  float:left;
+  padding-right:5px;
+}
