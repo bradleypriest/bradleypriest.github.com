@@ -3,7 +3,7 @@ layout: post
 title: "TIL The very, very long way"
 guid: til-the-very-very-long-way
 category:
-tagline: ""
+tagline:
 tags: ['rails']
 ---
 {% include JB/setup %}

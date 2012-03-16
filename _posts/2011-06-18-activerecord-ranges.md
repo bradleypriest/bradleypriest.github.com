@@ -1,11 +1,12 @@
 ---
 layout: post
-title: ActiveRecord Ranges
-guid: activerecord-ranges
-category:
+title: 'ActiveRecord Ranges'
+guid: 'activerecord-ranges'
 tagline:
-tags: ['rails','active_record']
+category:
+tags: ['rails', 'activerecord']
 ---
+
 {% include JB/setup %}
 
 Just a quick one today, I'm going to mention a quick trick you may have heard about, but is definitely worth knowing.
