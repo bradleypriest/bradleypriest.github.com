@@ -2,8 +2,8 @@
 layout: post
 title: Simple Rails Snippets
 guid: simple-rails-snippets
-tagline:
 category:
+tagline:
 tags: ['rails']
 ---
 {% include JB/setup %}
