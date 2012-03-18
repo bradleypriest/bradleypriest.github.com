@@ -116,13 +116,13 @@ ul.contact{
 .no-tag-count li a span{
   display: none;
 }
-.inline-tags{
+.inline-post-footer{
   min-height:1.4em;
 }
 .inline-comments{
   float:right;
 }
-.inline-tags li, .inline-tags span{
+.inline-post-footer li, .inline-post-footer span{
   float:left;
   padding-right:5px;
 }

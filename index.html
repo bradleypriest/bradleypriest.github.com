@@ -25,13 +25,15 @@ tagline:
     <div class='post-content'>
       {{ post.content }}
     </div>
-    <a class='inline-comments' href="{{ BASE_PATH }}{{ post.url }}#disqus_thread" {% if post.guid %}data-disqus-identifier='{{post.guid}}'{%endif%}>Comments</a>
-    <div class='inline-tags'>
-      <span>Tags:</span>
-      <ul class='unstyled no-tag-count'>
-        {% assign tags_list = post.tags %}
-        {% include JB/tags_list %}
-      </ul>
+    <div class='inline-post-footer'>
+      <a class='inline-comments' href="{{ BASE_PATH }}{{ post.url }}#disqus_thread" {% if post.guid %}data-disqus-identifier='{{post.guid}}'{%endif%}>Comments</a>
+      {% unless post.tags == empty %}
+        <span>Tags:</span>
+        <ul class='unstyled no-tag-count'>
+          {% assign tags_list = post.tags %}
+          {% include JB/tags_list %}
+        </ul>
+      {% endunless %}
     </div>
   </article>
 {% endfor %}
