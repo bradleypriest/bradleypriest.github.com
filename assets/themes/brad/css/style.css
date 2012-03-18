@@ -126,3 +126,8 @@ ul.contact{
   float:left;
   padding-right:5px;
 }
+pre{
+  overflow-x:scroll;
+  white-space:pre;
+  word-wrap:normal;
+}
