@@ -2,7 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    {% if page.type == 'home' %}
+    <title>Bradley Priest</title>
+    {% elsif page.type == 'post' %}
+    <title>{{ page.title }} by Bradley Priest</title>
+    {% else %}
+    <title>{{ page.title }} - Bradley Priest</title>
+    {% endif %}
+
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
