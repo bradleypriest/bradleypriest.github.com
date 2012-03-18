@@ -73,12 +73,12 @@
                 {% endif %}
 
               </ul>
-              <h3>Recent Posts</h3>
+              <a href='/archives.html' class='silent-link'><h3>Recent Posts</h3></a>
               <ul class='unstyled'>
                 {% assign pages_list = site.posts %}
                 {% include JB/pages_list %}
               </ul>
-              <h3>Tags</h3>
+              <a href='/tags.html' class='silent-link'><h3>Tags</h3></a>
               <ul class='unstyled no-tag-count'>
                 {% assign tags_list = site.tags %}
                 {% include JB/tags_list %}
