@@ -134,3 +134,7 @@ pre{
   white-space:pre;
   word-wrap:normal;
 }
+.twitter-share-button{
+  float:right;
+  margin-top:1em;
+}

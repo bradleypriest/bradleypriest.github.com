@@ -97,7 +97,9 @@
       </footer>
 
     </div> <!-- /container -->
-
+    {% if page.type == 'post' %}
+      {% include custom/twitterJS %}
+    {% endif %}
     {% include JB/analytics %}
   </body>
 </html>

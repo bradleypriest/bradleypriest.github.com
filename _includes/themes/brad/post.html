@@ -5,6 +5,9 @@
   </h2>
 
   {{ content }}
+
+  <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{page.title}}" data-via="bradleypriest">Tweet</a>
+
   {% unless page.tags == empty %}
     <div class= 'post-tags'>
       <span>Tags:</span>
@@ -14,6 +17,7 @@
       </ul>
     </div>
   {% endunless %}
+
   <hr>
   <div class="pager">
     <ul>
