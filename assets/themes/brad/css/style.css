@@ -138,3 +138,8 @@ pre{
   float:right;
   margin-top:1em;
 }
+.icon-rss{
+  background: url(/rss.png) no-repeat;
+  text-indent: 22px;
+  margin-left: -18px !important;
+}
