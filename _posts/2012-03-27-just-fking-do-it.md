@@ -4,7 +4,6 @@ title: "Just (f**king) do it"
 slug: "just-fking-do-it"
 category:
 tags: ['startup']
-published: false
 ---
 {% include JB/setup %}
 
