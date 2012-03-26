@@ -3,6 +3,7 @@ layout: post
 title: "Just (f**king) do it"
 slug: "just-fking-do-it"
 category:
+tagline:
 tags: ['startup']
 ---
 {% include JB/setup %}
