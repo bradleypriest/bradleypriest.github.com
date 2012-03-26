@@ -22,8 +22,10 @@ Here's a quick little ruby script I wrote, use at your own risk, I can almost gu
 Firstly log in to Foursquare and head to [https://foursquare.com/oauth/](https://foursquare.com/oauth/) to register a new consumer.
 You can fill in anything for the website and url, make sure to record the callback url though.
 
+Open your console by running `irb -r ./foursquare_bot.rb`
+
 Run `FoursquareBot.get_oauth(client_id, callback_url)` to get a url to visit.
-Open the url in your browser, authenticate with Foursquare and we're good to go, just copy down the code parameter from the url you get redirected to.
+Authenticate with Foursquare and we're good to go, just copy down the code parameter from the url you get redirected to.
 
 ![URL](https://img.skitch.com/20120326-qia79s888pn5sdp8skn3trpqar.jpg)
 
