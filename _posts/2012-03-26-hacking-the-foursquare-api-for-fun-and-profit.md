@@ -3,7 +3,7 @@ layout: post
 title: "Hacking the Foursquare API for fun and profit??"
 slug: "hacking-the-foursquare-api-for-fun-and-profit"
 category:
-tags: []
+tags: ['ruby']
 ---
 {% include JB/setup %}
 
