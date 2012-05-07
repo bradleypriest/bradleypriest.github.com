@@ -3,7 +3,7 @@ layout: post
 title: "What's new in EmberJS May 7"
 slug: "whats-new-in-emberjs-may-7"
 category:
-tags: []
+tags: [emberjs, ember-wrapup]
 ---
 {% include JB/setup %}
 
