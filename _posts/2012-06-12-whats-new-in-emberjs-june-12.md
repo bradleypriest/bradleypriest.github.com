@@ -9,7 +9,7 @@ tags: [emberjs, ember-wrapup]
 
 A couple of new guides out this week and still plenty of docfixes and tidying up going on. I urge everyone to have read through the Ember source sometime if you haven't already.
 
-###Weekly Wrapup #5
+###Weekly Wrapup #6
 
 * Two new official guides have been released on [application structure/outlets](http://emberjs.com/guides/outlets/) and [asynchrony](http://emberjs.com/guides/asynchrony/). Check them out they're great for newbies and not-so-newbies alike.
 

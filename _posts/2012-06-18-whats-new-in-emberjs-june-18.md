@@ -9,7 +9,7 @@ tags: []
 
 A couple of breaking changes this week, if you've been following master, there's a couple of quick tweaks that need to be made.
 
-###Weekly Wrapup #5
+###Weekly Wrapup #7
 
 #### Breaking Changes
 * [d8383b](https://github.com/emberjs/ember.js/commit/d8383b65aaf9dcd0f92687b7ed6921f1a436a73c) creates an `Ember.Route` subclass of `Ember.State`, if you're using the new router, make sure you change over as there are currently no warnings.
