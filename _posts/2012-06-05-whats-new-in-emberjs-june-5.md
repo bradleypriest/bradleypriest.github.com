@@ -13,7 +13,7 @@ Again mostly routing stuff this week, although it's great to see a lot of work b
 
 * [82d35e](https://github.com/emberjs/ember-rails/commit/82d35eb582d4a0a73613bba61b92613484a03a62)The ember-rails gem now generates the relevant ember resources when `rails g resource` is run
 
-* Removed deprecated use of ["*"](https://github.com/emberjs/ember.js/commit/50d66622e551d0b98dcce80d12a9a8cd0541a873) and [leading periods](https://github.com/emberjs/ember.js/commit/bf9400510f00a2962bb36162eae642c56731a34a) in paths.
+* Removed deprecated use of [wildcards \*](https://github.com/emberjs/ember.js/commit/50d66622e551d0b98dcce80d12a9a8cd0541a873) and [leading periods](https://github.com/emberjs/ember.js/commit/bf9400510f00a2962bb36162eae642c56731a34a) in paths.
 
 * As of [ee46ed](https://github.com/emberjs/ember.js/commit/ee46ed0a3bbde4f1b21e5b7d4a5550470a138a4e), views now inherit controllers from their parents.
 
