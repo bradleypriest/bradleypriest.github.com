@@ -15,7 +15,7 @@ Some pretty big breaking changes again this week, part of being on the edge thou
 
 * In the [biggest change](https://github.com/emberjs/ember.js/pull/1176) of the week, `getPath/setPath` have been removed in favour of supporting full paths in `get` and `set`.
 
-* As of [83b7a6](https://github.com/emberjs/ember.js/commit/83b7a61a892e55423cf1e66f606b13435bcab8f0) the `action` helper now requires an explicit context to be set. The api has also changed, the context is now simply passed as an optional second parameter. {{action edit context="post"}} becomes {{action edit post}}. If you were relying on default contexts you will need to use {{action edit this}}
+* As of [83b7a6](https://github.com/emberjs/ember.js/commit/83b7a61a892e55423cf1e66f606b13435bcab8f0) the `action` helper now requires an explicit context to be set. The api has also changed, the context is now simply passed as an optional second parameter. \{\{action edit context="post"\}\} becomes \{\{action edit post\}\}. If you were relying on default contexts you will need to use \{\{action edit this\}\}
 
 #### Improvements
 
