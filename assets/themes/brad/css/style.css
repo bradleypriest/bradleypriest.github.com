@@ -89,9 +89,6 @@ article:last-of-type{
   box-shadow:2px 2px 8px #bbb;
   margin-bottom:10px;
 }
-ul.contact{
-  margin-left:20px;
-}
 .silent-link{
   color:black;
 }
@@ -142,8 +139,6 @@ pre{
   float:right;
   margin-top:1em;
 }
-.icon-rss{
-  background: url(/rss.png) no-repeat;
-  text-indent: 22px;
-  margin-left: -18px !important;
+a:hover > i{
+  text-decoration:none;
 }

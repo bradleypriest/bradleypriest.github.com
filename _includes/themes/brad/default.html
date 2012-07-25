@@ -57,28 +57,32 @@
 
               <h3>Contact</h3>
 
-              <ul class='unstyled contact' >
+              <ul class='unstyled' >
 
                 {% if site.author.email %}
-                  <li class='icon-envelope icon-large'>
-                    <a href='mailto:{{site.author.email}}'>{{site.author.email}}</a>
+                  <li>
+
+                    <a href='mailto:{{site.author.email}}'><i class='icon-envelope icon-large'></i>{{site.author.email}}</a>
                   </li>
                 {% endif %}
 
                 {% if site.author.twitter %}
-                  <li class='icon-twitter-sign icon-large'>
-                    <a href='http://twitter.com/{{site.author.twitter}}'>@{{site.author.twitter}}</a>
+                  <li >
+
+                    <a href='http://twitter.com/{{site.author.twitter}}'><i class='icon-twitter icon-large'></i>@{{site.author.twitter}}</a>
                   </li>
                 {% endif %}
 
                 {% if site.author.github %}
-                  <li class='icon-github-sign icon-large'>
-                    <a href='http://github.com/{{site.author.github}}'>@{{site.author.github}}</a>
+                  <li>
+
+                    <a href='http://github.com/{{site.author.github}}'><i class='icon-github icon-large'></i>@{{site.author.github}}</a>
                   </li>
                 {% endif %}
 
-                <li class='icon-rss'>
-                  <a href='/atom.xml'>RSS feed</a>
+                <li>
+
+                  <a href='/atom.xml'><i class='icon-rss icon-large'></i>RSS feed</a>
                 </li>
 
               </ul>
