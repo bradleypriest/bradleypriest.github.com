@@ -10,7 +10,7 @@ tags: [emberjs, ember-wrapup]
 Sorry I missed last week, but literally nothing had happened.
 This week, there have been some massive changes under the hood.
 
-###Weekly Wrapup #9
+###Weekly Wrapup #10
 
 #### Improvements
 
