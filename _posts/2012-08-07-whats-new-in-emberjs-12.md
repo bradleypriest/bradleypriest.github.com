@@ -18,7 +18,7 @@ N.B. There was a small bug with the 1.0.pre release which has since been [fixed]
 
 #### Updates
 
-* [http://docs.emberjs.com/](http://docs.emberjs.com/) has been updated to 1.0.pre documentation, no more building your own local copy. There is also work being done currently to get an edge docs site up, you can find a copy at [http://ember-edge-docs.herokuapp.com](http://ember-edge-docs.herokuapp.com/) whilst they sort out a proper domain.
+* [http://docs.emberjs.com/](http://docs.emberjs.com/) has been updated to 1.0.pre documentation, no more building your own local copy. <s>There is also work being done currently to get an edge docs site up, you can find a copy at [http://ember-edge-docs.herokuapp.com](http://ember-edge-docs.herokuapp.com/) whilst they sort out a proper domain.</s> Edge docs site now live: [http://docs.edge.emberjs.com](http://docs.edge.emberjs.com/)
 
 * [ember-rails](https://github.com/emberjs/ember-rails) and the [starter-kit](https://github.com/emberjs/starter-kit) have been updated to 1.0.pre hopefully this should fix a lot of issues with getting started with ember.
 
