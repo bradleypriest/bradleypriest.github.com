@@ -7,9 +7,10 @@ tags: [emberjs, ember-wrapup]
 ---
 {% include JB/setup %}
 
-###Weekly Wrapup #13
 
 Most of the work at the moment seems to be in the refactoring of ember-data. It's not in master yet, but expect some pretty big changes. There's also a lot of work going on in the documentation side, if you find something amiss please help the core team out.
+
+###Weekly Wrapup #13
 
 #### Breaking changes
 
