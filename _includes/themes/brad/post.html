@@ -6,7 +6,7 @@
 
   {{ content }}
 
-  <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{page.title}}" data-via="bradleypriest">Tweet</a>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{page.title | replace: 'EmberJS #', '#EmberJS '}}" data-via="bradleypriest">Tweet</a>
 
   {% unless page.tags == empty %}
     <div class= 'post-tags'>
