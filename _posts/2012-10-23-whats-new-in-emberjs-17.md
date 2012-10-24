@@ -24,7 +24,7 @@ It's been a good week for Ember updates, big thanks to Peter Wagenet for single-
 
 * EmberJS now has a [CONTRIBUTING.md](https://github.com/emberjs/ember.js/blob/master/CONTRIBUTING.md) page. If you've ever felt like you've found a bug or wanted to know better how to help out, there's plenty of info there.
 
-* [f103fe](https://github.com/emberjs/ember.js/commit/f103fe49de72c88c6c746e74ab0a500b51d35473) deprecates using \{\{collection\}\} with a class in favor of \{\{each\}\}.
+* [f103fe](https://github.com/emberjs/ember.js/commit/f103fe49de72c88c6c746e74ab0a500b51d35473) deprecates using \{\{collection\}\} without a class in favor of \{\{each\}\}.
 
 * [PR #249](https://github.com/emberjs/data/pull/249) gives ember-data the ability to set a custom URL, just make sure you set up CORS properly.
 
