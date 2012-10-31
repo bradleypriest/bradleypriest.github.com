@@ -9,7 +9,7 @@ tags: [emberjs, ember-wrapup]
 
 It's been a good week for Ember updates, big thanks to Peter Wagenet for single-handedly reviewing and cleaning up [every single Ember ticket](https://twitter.com/wagenet/status/259510421814398976).
 
-###Weekly Wrapup #16
+###Weekly Wrapup #17
 
 #### Breaking Changes
 
