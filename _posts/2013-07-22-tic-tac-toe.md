@@ -12,7 +12,7 @@ Every now and then it's nice to build something completely and utterly useless j
 On Sunday, I sat down and spent a couple of hours building Tic-Tac-Toe in EmberJS.
 Although Ember is almost definitely the wrong hammer for the nail, it gave me a chance to refresh the basics.
 
-To check out the final product visit [http://htmlgist.herokuapp.com/6051289](http://htmlgist.herokuapp.com/6051289), or you can find the code on [Github](https://gist.github.com/bradleypriest/6051289).
+To check out the final product and code visit [http://bl.ocks.org/bradleypriest/6051289](http://bl.ocks.org/bradleypriest/6051289).
 
 There are plenty of Ember getting started tutorials out there, but they all seem a little too useful for my tastes, so let's walk through building Tic-Tac-Toe in Ember.
 
@@ -258,7 +258,7 @@ Now wasn't that easy, if you read the final codebase, you'll see I made a couple
 - Adding a reset board button
 - Changing the wrapper div's to anchor tags so it works on mobile
 
-Check out the final code at [https://gist.github.com/bradleypriest/6051289](https://gist.github.com/bradleypriest/6051289) and give it a go at [http://htmlgist.herokuapp.com/6051289](http://htmlgist.herokuapp.com/6051289)
+Check out the final code and give it a go at [http://bl.ocks.org/bradleypriest/6051289](http://bl.ocks.org/bradleypriest/6051289)
 
 The next step would be to make the UI a little smarter, I would probably check for any intersections that return two
 matches and see if the missing index is still empty, but I'll leave that as an exercise for the reader.
