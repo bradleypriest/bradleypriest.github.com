@@ -53,7 +53,7 @@ Now what if I want to add the librarian who checked out the book to them to the 
 This is my current solution to the problem, it involves a bit of SQL which might be a little scary for beginners, please leave a comment if you've got a better idea, I may even look into seeing if it's achievable with ARel sometime soon.
 
 {% highlight ruby %}
-  class Book
+  class Book < ActiveRecord::Base
     has_many :readers, :through => :book_loans,
              :select => "readers.*, book_loans.book_loan_librarian AS book_loan_librarian"
   end
@@ -67,3 +67,10 @@ This is my current solution to the problem, it involves a bit of SQL which might
 If anyone has any questions/suggestions feel free to leave a comment or hit me up on Twitter.
 
 **N.B.** I was originally going to use `book_loan.created_at` but ActiveRecord doesn't automatically typecast the extra columns returned which would be a bit out of the scope of this post.
+
+EDIT: In Rails 4+ it would look like this 
+
+{% highlight ruby %}
+   has_many :readers, -> { select("readers.*, book_loans.book_loan_librarian AS book_loan_librarian") },
+            :through => :book_loans
+{% endhighlight %}
