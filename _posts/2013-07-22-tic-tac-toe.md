@@ -265,6 +265,6 @@ matches and see if the missing index is still empty, but I'll leave that as an e
 
 Have a great day, now go building something utterly useless and let me know [@bradleypriest](https://twitter.com/bradleypriest)
 
-<script src="http://static.jsbin.com/js/embed.js">
+<script src="//static.jsbin.com/js/embed.js">
 
 </script>
